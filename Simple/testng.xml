@@ -7,6 +7,6 @@
     <test verbose="2" preserve-order="true" name="C:/Users/abivp/IdeaProjects/Simple/src/test/java/SearchAndValidateProduct/RunTests.java">
         <classes><class name="SearchAndValidateProduct.RunTests">
             <methods>
-                <include name="Test01"/>
+                <include name="PLP_TC_01"/>
             </methods>
         </class></classes></test></suite>
