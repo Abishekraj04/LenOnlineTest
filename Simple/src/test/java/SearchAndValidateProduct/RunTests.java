@@ -35,8 +35,8 @@ public void setup()
 
 
 @Test(dataProvider="testdata",dataProviderClass = DataProviderUtil.class)
-    public void Test01(Map<String, String> data) throws Exception {
-    logger = report.createTest("Test01");
+    public void PLP_TC_01(Map<String, String> data) throws Exception {
+    logger = report.createTest("PLP_TC_01");
     String browsername = CommonUtils.readpropertyfile("browser");
     if(browsername.equalsIgnoreCase("chrome")) {
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\resources\\chromedriver.exe");
