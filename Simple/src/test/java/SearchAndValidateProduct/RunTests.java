@@ -39,12 +39,12 @@ public void setup()
     logger = report.createTest("Test01");
     String browsername = CommonUtils.readpropertyfile("browser");
     if(browsername.equalsIgnoreCase("chrome")) {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\abivp\\IdeaProjects\\Simple\\src\\main\\resources\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\resources\\chromedriver.exe");
         driver = new ChromeDriver();
     }
     if(CommonUtils.readpropertyfile("browser").equals("firefox"))
     {
-        System.setProperty("webdriver.gecko.driver", "C:\\Users\\abivp\\IdeaProjects\\Simple\\src\\main\\resources\\geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+ "\\src\\main\\resources\\geckodriver.exe");
         driver = new FirefoxDriver();
     }
     driver = new ChromeDriver();
