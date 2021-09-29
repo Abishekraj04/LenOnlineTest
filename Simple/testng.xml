@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Listener.ListenerClass"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/abivp/IdeaProjects/Simple/src/test/java/SearchAndValidateProduct/RunTests.java">
+        <classes><class name="SearchAndValidateProduct.RunTests">
+            <methods>
+                <include name="Test01"/>
+            </methods>
+        </class></classes></test></suite>
